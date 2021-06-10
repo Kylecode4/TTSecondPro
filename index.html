@@ -3,76 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <title>Kyle Combs Profile</title>
 </head>
 <body>
-    <h1 id="top">Kyle Combs</h1>
-        <ul>
-            <li>Home</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
+    <nav>
+        <h1 id="top" class="title">Kyle Combs</h1>
+        <ul class="nav">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#port">Portfolio</a></li>
+            <li><a href="#con">Contact</a></li>
+            <li><a href="https://teamtreehouse.com/kylec2" target="_blank">Skills</a></li>
         </ul>
+    </nav>
 
-    
-    <img src="img/responsive-layout-profile.png" alt="Responsive Portfoli Picture"/>
 
-    <p>
+    <div class="section-1">
+    <img class="profile-pic" src="img/responsive-layout-profile.png" alt="Responsive Portfoli Picture"/>
+
+    <p class="bio">
         Hi! I'm a Front-End Web Developer who loves responsive design and css.
         I recently finished learning Front-End Web Development at Treehouse and am excited to put all my
         skills to use!
     </p>
+    </div>
 
-    <div class="container">
-            <h2>Portfolio</h2>
+    <div class="portfolio-container">
+            <h2 id="port">Portfolio</h2>
 
-                <div>
+                <div class="topic proj-1">
                 <img src="img/portfolio-1.png" alt="Marketing portfolio pic"/>
                 <h3>Marketing Page</h3>
-                    <p>
+                    <p class="portfolio-text">
                         This project shows the front page of a marketing website meant for a specific business I'm interested in.
                     </p>  
                 </div>
 
-                <div>
+                <div class="topic proj-2">
                     <img src="img/portfolio-2.png" alt="search portfolio pic"/>
                     <h3>Search Page</h3>
-                    <p>
+                    <p class="portfolio-text">
                         This Project Searches through a specific database to find information that the user is trying to look up
                     </p>  
                 </div>
 
-                <div>
+                <div class="topic proj-3">
                     <img src="img/portfolio-3.png" alt="travel portfolio pic"/>
                     <h3>Travel App</h3>
-                    <p>
+                    <p class="portfolio-text">
                         This project compares travel times based on different transportation methods and tells you the best one.
                     </p>  
                 </div>
 
-                <div>
+                <div class="topic proj-4">
                     <img src="img/portfolio-4.png" alt=" map portfolio pic"/>
                     <h3>Map of Favorite Spots</h3>
-                    <p>
+                    <p class="portfolio-text">
                         This project uses mapping apis to plot points for my favorites sppots in the city for a do-it-yourself walking tour.
                     </p>  
                 </div>
 
-                <div>
+                <div class="topic proj-5">
                     <img src="img/portfolio-5.png" alt="photo gallery portfolio pic"/>
                     <h3>Photo Gallery</h3>
-                    <p>
+                    <p class="portfolio-text">
                         This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.
                     </p>  
                 </div>
 
-                <div>
+                <div class="topic proj-6">
                     <img src="img/portfolio-6.png" alt="calculator portfolio pic"/>
                     <h3>Calculator</h3>
-                    <p>
+                    <p class="portfolio-text">
                         Someone can enter the numbers they want, and press the big blue button and get the result.
                     </p>  
                 </div>
@@ -80,9 +87,9 @@
 
           <div class="contact-container">
             <h2>Contact</h2>
-            <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-            <p>Phone <a href="#" class="contact.info">1 (111) 555-1234</a></p>
-            <p>E-mail <a href="#" class="contact.info">kyle.combs12354@gmail.com</a></p>
+            <p class="contact-text" id="con">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+            <p>Phone: <a href="tel:+14123815500" class="contact-info">1 (111) 555-1234</a></p>
+            <p>E-mail: <a href="mailto: kyle.combs12354@gmail.com" class="contact-info">kyle.combs12354@gmail.com</a></p>
           </div>
 
     <footer>
@@ -92,6 +99,12 @@
         <a class="top" href="#top">
             BACK TO TOP
         </a>
+        <ul class="nav-footer">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#port">Portfolio</a></li>
+            <li><a href="#con">Contact</a></li>
+            <li><a href="https://teamtreehouse.com/kylec2" target="_blank">Skills</a></li>
+        </ul>
     </footer>
           
 </body>
